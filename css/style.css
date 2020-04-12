@@ -2,10 +2,14 @@ html {
 scroll-behavior: smooth;
 }
 body{
-	padding: 18px;
 	background-color: #2C3C50;
 	color: #fff;
 	font-family: Raleway !important;
+}
+main{
+	padding: 16px;
+	height: 700px;
+    overflow: hidden;
 }
 .container-fluid{
 	padding: 0px;
@@ -32,32 +36,32 @@ header .header-img-logo img {
     border-radius: 83px;
     transform: rotateZ(45deg);
     margin-left: -105px;
-    margin-top: 95px;
+    margin-top: 75px;
     margin-bottom: 60px;
     overflow: hidden;
 }
-.center-box-content{
+#center-box .center-box-design .center-box-content{
 	transform: rotateZ(-45deg);
 	color: #2C3C50;
 	padding-top: 60px;
     padding-left: 45px;
 }
-.center-box-content h5{
+#center-box .center-box-design .center-box-content h5{
 	font-size: 1.8rem;
 	font-weight: 600;
 	color: #384A58;
 }
-.center-box-content h3{
+#center-box .center-box-content h3{
 	font-size: 2.5rem;
 	font-weight: 700;
 }
-.center-box-content h6{
+#center-box .center-box-content h6{
 	margin-top: 10px;
     margin-left: 35px;
     padding-left: 15px;
     position: relative;
 }
-.center-box-content .bar::after{
+#center-box .center-box-content .bar::after{
 	content: '';
     display: block;
     width: 5px;
@@ -69,7 +73,7 @@ header .header-img-logo img {
     left: 0px;
     top: 6px;
 }
-.center-box-content .bar::before{
+#center-box .center-box-content .bar::before{
 	content: '';
     display: block;
     width: 25px;
@@ -78,12 +82,12 @@ header .header-img-logo img {
     left: -32px;
     top: 8px;
 }
-.btn-next-home-cover{
+#center-box .btn-next-home-cover{
 	position: absolute;
-    bottom: 150px;
-    right: 48px;
+    bottom: 180px;
+    right: 52px;
 }
-.next-home{
+#center-box .next-home{
 	background: #051d39;
     color: #fff;
     border: 2px solid #fff;
@@ -94,9 +98,25 @@ header .header-img-logo img {
     font-weight: 600;
     letter-spacing: 3px;
 }
-.next-home i{
+#center-box .next-home i{
 	padding-left: 8px;
     font-size: 17px;
+}
+
+#bottom-box{
+	position: relative;
+}
+#bottom-box .bottom-box-design{
+	border: 1px solid #aaa;
+    background: #fff;
+    width: 245px;
+    height: 185px;
+    padding: 20px;
+    border-radius: 60px;
+    transform: rotateZ(45deg);
+    margin-left: 255px;
+    margin-top: 0px;
+    overflow: hidden;
 }
 
 
