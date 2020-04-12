@@ -24,7 +24,6 @@ header .header-img-logo img {
 	position: absolute;
 	right: 20px;
 }
-
 #center-box .center-box-design{
 	border: 1px solid #aaa;
     background: #fff;
@@ -41,18 +40,17 @@ header .header-img-logo img {
 .center-box-content{
 	transform: rotateZ(-45deg);
 	color: #2C3C50;
-	font-weight: 600;
 	padding-top: 60px;
     padding-left: 45px;
 }
 .center-box-content h5{
 	font-size: 1.8rem;
-	font-weight: 700;
+	font-weight: 600;
 	color: #384A58;
 }
 .center-box-content h3{
 	font-size: 2.5rem;
-	font-weight: 800;
+	font-weight: 700;
 }
 .center-box-content h6{
 	margin-top: 10px;
@@ -81,6 +79,27 @@ header .header-img-logo img {
     left: -32px;
     top: 8px;
 }
+.btn-next-home-cover{
+	position: absolute;
+    bottom: 150px;
+    right: 48px;
+}
+.next-home{
+	background: #051d39;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 50px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.next-home i{
+	padding-left: 8px;
+    font-size: 17px;
+}
+
 
 /*NAV TABS*/
 
