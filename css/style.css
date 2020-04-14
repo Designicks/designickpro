@@ -4,7 +4,7 @@ scroll-behavior: smooth;
 body{
 	background-color: #2C3C50;
 	color: #fff;
-	font-family: 'Raleway' !important;
+	font-family: 'Raleway';
 }
 main{
 	padding: 16px;
@@ -118,6 +118,41 @@ header .header-img-logo img {
     margin-top: 0px;
     overflow: hidden;
 }
+
+
+/*Ripple EFFECT Button*/
+
+/* Ripple effect */
+.ripple {
+  background-position: center !important;
+  transition: background 0.8s !important;
+}
+.ripple:hover {
+  background: #051d39 radial-gradient(circle, transparent 1%, #2c3c50 1%) center/15000% !important;
+}
+.ripple:active {
+  background-color: #2c3c50 !important;
+  background-size: 100% !important;
+  transition: background 0s !important;
+}
+
+/* Button style */
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #2196f3;
+  //box-shadow: 0 0 4px #999;
+  outline: none;
+}
+.btn:focus{
+box-shadow: none;	
+}
+/*Ripple EFFECT Button*/
 
 
 /*NAV TABS*/
