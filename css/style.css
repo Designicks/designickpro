@@ -16,6 +16,165 @@ main{
 }
 .wrapper{}
 header{}
+
+/*menu button*/
+/* -----------------------
+		# Header
+-------------------------*/
+nav{	
+	background:#ffffff; 
+	transition: all 0.5s;
+	z-index: 0;
+	box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}	
+nav .navbar-brand{
+	width:100px;
+	transition: all 0.3s;
+}
+nav ul li{
+	font-family:Quicksand;
+	font-weight: 500;
+	font-size: 18px;
+	padding:0 15px;
+}
+nav .nav-item{
+	color:#eee;
+}
+.nav-item .nav-link{color:#2c3c50;}
+li.nav-item .nav-link {
+    background: #fff;
+    margin: 4px 0;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+nav .nav-item:hover
+{
+	color:#fff;
+}
+.navbar-light .navbar-nav .nav-link{
+	z-index:0;
+	color:#555;
+	font-weight: 700;
+}
+.navbar-nav a.nav-link i {
+    margin-right: 14px;
+    margin-left: 8px;
+    font-size: 18px;
+    color:#2c3c50;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color:#aaa;
+	transition: 0.2s;
+	font-weight: 700;
+}
+nav.navbar.shrink {
+  min-height: 10px;
+  background: #ffffff;
+}
+nav.navbar{
+    Animation
+   -webkit-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+}
+nav.shrink a {
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  font-size: 17px;
+}
+nav .navbar-toggler-icon{
+	font-size:120%;
+	padding:2px;
+}
+nav.shrink .navbar-toggler-icon{
+	font-size:90%;
+	padding:2px;
+	border:none !important;
+}
+
+nav.shrink .navbar-toggler {
+  	padding: 4px 5px;
+  	margin: 8px 0;
+  	background: #ffffff;
+  	border:none !important;
+}
+
+nav.shrink .navbar-brand {
+  width:50px;
+  padding:0;
+  margin:0;
+}
+
+@media only screen and (max-width: 640px){          
+ nav .navbar-brand{
+	width:60px;
+	transition: all 0.3s;
+	}
+ #navbarResponsive{
+	text-align: center;
+	    margin-top: 14px;
+	}	
+}
+@media only screen and (max-width: 990px){   
+ #navbarResponsive{
+	text-align: center;
+	    margin-top: 14px;
+	}
+}
+/* styles for new menu bt  */
+
+.navbar-toggler{
+	display:none;
+}
+.menu_container {
+    display: inline-block;
+    cursor: pointer;
+    transform: rotateZ(45deg);
+
+	background: #fff;
+   	padding: 14px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: -27px;
+    margin-left: -35px;
+    padding-left: 40px;
+    border-radius: 22px;
+}
+
+
+.bar1, .bar2, .bar3 {
+    height: 5px;
+    background-color: #051d39;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 20px;
+  
+}
+.bar1{
+  width: 30px;
+  margin-left: 5px;
+}
+.bar2{
+	width:40px;
+}
+.bar3{
+	width:30px;
+	margin-left: 5px;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 7px);
+    transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-7px, -7px);
+    transform: rotate(45deg) translate(-7px, -7px);	
+}
+/*menu button*/
+
 header .header-img-logo{
 	padding:20px;
 	margin-bottom:30px;
@@ -161,8 +320,8 @@ box-shadow: none;
 /*NAV TABS*/
 
 .bottom-tabs{
-	position: fixed;
-	bottom:0;
+	position: relative;
+    top: 60px;
 	left: 0;
 	width: 100%;
 	padding:10px 15px;
@@ -171,6 +330,37 @@ box-shadow: none;
 	color: #2C3C50;
 	border:1px solid #2C3C50;
 }
+.nav.nav-tabs#myTab{
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    background: #2C3C50;
+    flex-flow: row;
+    justify-content: center;
+}
+.bottom-tabs #myTab li.nav-item {
+    padding: 0px 8px;
+    background: none;
+}
+.bottom-tabs #myTab li.nav-item .nav-link{
+	padding: 10px 20px;
+	color:#fff;
+	background: none;
+	font-size: 24px;
+}
+.bottom-tabs #myTab li.nav-item .nav-link a{
+	color:#fff;
+}
+.bottom-tabs #myTab .nav-item.show .nav-link i, 
+.bottom-tabs #myTab .nav-item .nav-link.active i{
+	opacity: 0.7;
+	transition: all 0.1s;
+}
+
 
 /*==========================
         SCROLLBAR CSS
@@ -198,142 +388,7 @@ box-shadow: none;
 
 
 /*HOME PAGE STYLES*/
-/* -----------------------
-		# Header
--------------------------*/
-nav{	
-	background:#ffffff; 
-	transition: all 0.5s;
-	z-index: 0;
-	box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
-}	
-nav .navbar-brand{
-	width:100px;
-	transition: all 0.3s;
-}
-nav ul li{
-	font-family:Quicksand;
-	font-weight: 500;
-	font-size: 18px;
-	padding:0 15px;
-}
-nav .nav-item{
-	color:#eee;
-}
-.nav-item .nav-link{color:#fff;}
-li.nav-item .nav-link {
-    background: #909090;
-    margin: 4px 0;
-    text-align: left;
-    padding: 10px;
-    border-radius: 10px;
-}
-nav .nav-item:hover
-{
-	color:#fff;
-}
-.navbar-light .navbar-nav .nav-link{
-	z-index:0;
-	color:#555;
-	font-weight: 700;
-}
-.navbar-light .navbar-nav .nav-link:hover{
-	color:#aaa;
-	transition: 0.2s;
-	font-weight: 700;
-}
-nav.navbar.shrink {
-  min-height: 10px;
-  background: #ffffff;
-}
-nav.navbar{
-    Animation
-   -webkit-transition: all 0.5s ease;
-   transition: all 0.5s ease;
-}
-nav.shrink a {
-  padding-top: 3px !important;
-  padding-bottom: 3px !important;
-  font-size: 17px;
-}
-nav .navbar-toggler-icon{
-	font-size:120%;
-	padding:2px;
-}
-nav.shrink .navbar-toggler-icon{
-	font-size:90%;
-	padding:2px;
-	border:none !important;
-}
 
-nav.shrink .navbar-toggler {
-  	padding: 4px 5px;
-  	margin: 8px 0;
-  	background: #ffffff;
-  	border:none !important;
-}
-
-nav.shrink .navbar-brand {
-  width:50px;
-  padding:0;
-  margin:0;
-}
-
-@media only screen and (max-width: 640px){          
- nav .navbar-brand{
-	width:60px;
-	transition: all 0.3s;
-	}
- #navbarResponsive{
-	text-align: center;
-	}	
-}
-@media only screen and (max-width: 990px){   
- #navbarResponsive{
-	text-align: center;
-	}
-}
-/* styles for new menu bt  */
-
-.navbar-toggler{
-	display:none;
-}
-.menu_container {
-    display: inline-block;
-    cursor: pointer;
-    transform: rotateZ(45deg);
-}
-
-.bar1, .bar2, .bar3 {
-    height: 5px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.4s;
-    border-radius: 20px;
-  
-}
-.bar1{
-  width: 30px;
-  margin-left: 5px;
-}
-.bar2{
-	width:40px;
-}
-.bar3{
-	width:30px;
-	margin-left: 5px;
-}
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);	
-}
 
 
 /*HOME PAGE STYLES*/

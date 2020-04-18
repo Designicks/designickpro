@@ -25,48 +25,17 @@
 </head>
 <body>
 
-<main>
-
-			<!-- new menu btn-->
-<div class="menu_container navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-
-					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link smooth"  href="#topbar">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link smooth"  href="#about">About</a>
-							</li>
-						<!-- 	<li class="nav-item">
-								<a class="nav-link smooth" href="#services">Services</a>
-							</li> -->
-							<li class="nav-item">
-								<a class="nav-link smooth"  href="#features">Features</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link smooth" href="#portfolio">Portfolio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link smooth" href="#contact">Contact</a>
-							</li>
-						</ul>
-					</div>
-		<!-- #nav-menu-container ends-->
-
 <header>
 	<div class="container-fluid">
 		<div class="header-img-logo clearfix">
-			<img src="images/designickPro.png" alt="DesignickPro Logo">
+			<div class="logo_cover">
+				<img src="images/designickPro.png" alt="DesignickPro Logo">
+			</div>
 		</div>
 	</div>
 </header>
 
-<section id="center-box">
+<!-- <section id="center-box">
 	<div class="center-box-design">
 		<div class="center-box-content">
 			<h5>Welcome to</h5>
@@ -79,18 +48,48 @@ Portfolio by Nick</h6>
 	<div class="btn-next-home-cover">
 			<a href="#"><button class="btn next-home ripple">next<i class="fas fa-caret-right"></i></button></a>
 	</div>	
-</section>
+</section> -->
 
-<section id="bottom-box">
-	<div class="bottom-box-design"></div>
-</section>
+
 <!-- 
 <h1>Hello There!</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quam voluptates omnis ducimus asperiores harum. Reprehenderit, praesentium itaque est magni quas quidem, blanditiis libero quod, esse perspiciatis tempora. Facilis, ab.</p> -->
 
 
-<!-- <div class="bottom-tabs"></div> -->
-</main>
+
+<section>
+	<div class="container-fluid">
+<div class="bottom-tabs-content bottom-tabs">
+
+<ul class="nav nav-tabs sticky fixed" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-layer-group"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-cubes"></i></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-user-tie"></i></a>
+  </li>
+  
+</ul>
+<div class="tab-content" id="myTabContent">
+  
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  	<img src="images/iphone.png" alt="iphone" class="img-responsive img-fluid">
+  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quam voluptates omnis ducimus asperiores harum. Reprehenderit, praesentium itaque est magni quas quidem, blanditiis libero quod, esse perspiciatis tempora. Facilis, ab.</p>
+  </div>
+
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quam voluptates omnis ducimus asperiores harum. Reprehenderit, praesentium itaque est magni quas quidem, blanditiis libero quod, esse perspiciatis tempora. Facilis, ab.</p></div>
+</div>
+</div>
+
+</div>
+</section>
 <!-- script for new menu btn -->
 <script>
 function myFunction(x) {
