@@ -329,6 +329,7 @@ box-shadow: none;
 	background: #fff;
 	color: #2C3C50;
 	border:1px solid #2C3C50;
+	height: 800px;
 }
 .nav.nav-tabs#myTab{
 	position: fixed;
