@@ -13,6 +13,7 @@ background: linear-gradient(to bottom, rgba(44,60,80,1) 0%, rgba(44,60,80,1) 39%
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3c50', endColorstr='#8a708a', GradientType=0 );
 	color: #fff;
 	font-family: 'Raleway';
+	font-family: 'Poppins';
 }
 main{
 	padding: 16px;
@@ -139,7 +140,6 @@ nav.shrink .navbar-brand {
     display: inline-block;
     cursor: pointer;
     transform: rotateZ(45deg);
-
 	background: #fff;
    	padding: 14px;
     padding-bottom: 20px;
@@ -351,7 +351,7 @@ box-shadow: none;
     flex-flow: row;
     justify-content: center;
     border-bottom:0;
-       border: 1px solid #fff;
+    border: 1px solid #fff;
     //box-shadow: 1px 1px 3px 1px rgba(130,98,94,.2);
     //box-shadow: 0 18px 44px 0 rgba(0,0,0,.2);
 }
@@ -473,18 +473,59 @@ box-shadow: none;
 }
 .mycard{
 	border-radius: 20px;
-	box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
+	//box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
+	box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 	transition: all 0.2s ease-in-out;
+	font-size: 14px;
+	margin-bottom: 20px;
 }
 .mycard:hover,.mycard:active{
-	box-shadow: 0 1px 6px 0 rgba(44,54,80,.80);
+	//box-shadow: 0 1px 6px 0 rgba(44,54,80,.80);
+	box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
-
-.mycard img{
+.mycard .heading{
+	text-align: center;
+	font-size: 24px;
+}
+.mycard img.card-img-top{
 	padding: 5px;
-
+}
+.mycard#card-service img.card-img-top{
+	margin-top: -30px;
 }
 .mycard .card-body{
 	padding: 20px 12px;
+}
+.mycard .card-body i{
+	font-size: 22px;
+	width: 30px;
+}
+.mycard .card-body p.procedurelist{
+	font-size: 18px;
+}
+.mycard .card-body .card-title{
+
+}
+.mycard .card-body a.letsgo{
+	margin: 0 auto;
+    text-align: center;
+    display: block;
+    border-radius: 25px;
+    width: 80%;
+}
+
+#card-service .card-body{
+	text-align: center;
+}
+#card-service .card-body div.service-img{
+	text-align: center;
+	margin-top: 30px;
+}
+#card-service .card-body h6.servicelist{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 10px;
+	margin-bottom: 0;
 }
 /*HOME PAGE STYLES*/
