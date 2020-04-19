@@ -345,7 +345,7 @@ box-shadow: none;
     left: -2px;
     display: flex;
     flex-direction: row;
-    width: 102%;
+    width: 101%;
     border-radius: 25px 25px 0px 0px;
     background: #2C3C50;
     flex-flow: row;
