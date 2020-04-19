@@ -329,28 +329,29 @@ box-shadow: none;
 
 .bottom-tabs{
 	position: relative;
-    top: 75px;
-	left: 0;
-	width: 100%;
-	padding:10px 15px;
-	border-radius: 50px;
-	background: #fff;
-	color: #2C3C50;
-	border:1px solid #2C3C50;
-	//height: 800px;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    padding: 0px 0px;
+    border-radius: 50px;
+    color: #2C3C50;
+    //border: 1px solid #fff;
+    padding-bottom: 180px;
 }
 .nav.nav-tabs#myTab{
 	position: fixed;
-    bottom: 0;
-    left: 0;
+	z-index: 9;
+    bottom: -2px;
+    left: -2px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 102%;
     border-radius: 25px 25px 0px 0px;
     background: #2C3C50;
     flex-flow: row;
     justify-content: center;
     border-bottom:0;
+       border: 1px solid #fff;
     //box-shadow: 1px 1px 3px 1px rgba(130,98,94,.2);
     //box-shadow: 0 18px 44px 0 rgba(0,0,0,.2);
 }
@@ -407,16 +408,37 @@ box-shadow: none;
 
 
 /*HOME PAGE STYLES*/
+.mycontainer{
+	padding: 14px;
+	overflow: hidden;
+	padding-top: 78px;
+    margin-top: -65px;
+}
+#myTabContent{
+	//position: relative;
+    //top: 155px;
+	//left: 0;
+	width: 100%;
+	padding:24px 16px;
+	border-radius: 50px;
+	background: #fff;
+	color: #2C3C50;
+	border:1px solid #2C3C50;
+	padding-bottom: 200px;
+}
+.main-tab-content{
+	margin-top: -70px;
+}
 .home-head{
-	position: relative;
+	position: absolute;
     background: #fff;
     border: 2px solid #2C3C50;
     width: 100%;
     border-radius: 40px;
     padding: 12px 10px;
     left: -95px;
-    top: -135px;
-    padding-left: 88px;
+    top: -205px;
+    padding-left: 98px;
 }
 .home-head h2{
 	margin-left: -2px;
@@ -426,13 +448,43 @@ box-shadow: none;
 	color: #bfc4ca !important;
 	text-transform: uppercase;
     font-weight: 700;
+    font-size: 14px;
 }
 .home-head h6 i {
     font-size: 3px;
     margin: 2px;
 }
+.home-head2{
+	position: relative;
+    background: #fff;
+    border: 2px solid #2C3C50;
+    width: 100%;
+    border-radius: 40px;
+    top: -47px;
+    padding: 12px 55px 0px 14px;
+    right: -80px;
+    text-align: right;
+}
 .home-head-quote p{
 	font-size: 14px;
 }
+.home-quote{
+    padding: 0px 4px;
+}
+.mycard{
+	border-radius: 20px;
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
+	transition: all 0.2s ease-in-out;
+}
+.mycard:hover,.mycard:active{
+	box-shadow: 0 1px 6px 0 rgba(44,54,80,.80);
+}
 
+.mycard img{
+	padding: 5px;
+
+}
+.mycard .card-body{
+	padding: 20px 12px;
+}
 /*HOME PAGE STYLES*/
