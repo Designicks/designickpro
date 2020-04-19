@@ -2,7 +2,15 @@ html {
 scroll-behavior: smooth;
 }
 body{
-	background-color: #2C3C50;
+	/*background-color: #2C3C50;*/
+	background: rgba(44,60,80,1);
+background: -moz-linear-gradient(top, rgba(44,60,80,1) 0%, rgba(44,60,80,1) 39%, rgba(138,112,138,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(44,60,80,1)), color-stop(39%, rgba(44,60,80,1)), color-stop(100%, rgba(138,112,138,1)));
+background: -webkit-linear-gradient(top, rgba(44,60,80,1) 0%, rgba(44,60,80,1) 39%, rgba(138,112,138,1) 100%);
+background: -o-linear-gradient(top, rgba(44,60,80,1) 0%, rgba(44,60,80,1) 39%, rgba(138,112,138,1) 100%);
+background: -ms-linear-gradient(top, rgba(44,60,80,1) 0%, rgba(44,60,80,1) 39%, rgba(138,112,138,1) 100%);
+background: linear-gradient(to bottom, rgba(44,60,80,1) 0%, rgba(44,60,80,1) 39%, rgba(138,112,138,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c3c50', endColorstr='#8a708a', GradientType=0 );
 	color: #fff;
 	font-family: 'Raleway';
 }
@@ -321,7 +329,7 @@ box-shadow: none;
 
 .bottom-tabs{
 	position: relative;
-    top: 60px;
+    top: 75px;
 	left: 0;
 	width: 100%;
 	padding:10px 15px;
@@ -329,7 +337,7 @@ box-shadow: none;
 	background: #fff;
 	color: #2C3C50;
 	border:1px solid #2C3C50;
-	height: 800px;
+	//height: 800px;
 }
 .nav.nav-tabs#myTab{
 	position: fixed;
@@ -343,6 +351,8 @@ box-shadow: none;
     flex-flow: row;
     justify-content: center;
     border-bottom:0;
+    //box-shadow: 1px 1px 3px 1px rgba(130,98,94,.2);
+    //box-shadow: 0 18px 44px 0 rgba(0,0,0,.2);
 }
 .bottom-tabs #myTab li.nav-item {
     padding: 0px 14px;
@@ -397,7 +407,32 @@ box-shadow: none;
 
 
 /*HOME PAGE STYLES*/
-
-
+.home-head{
+	position: relative;
+    background: #fff;
+    border: 2px solid #2C3C50;
+    width: 100%;
+    border-radius: 40px;
+    padding: 12px 10px;
+    left: -95px;
+    top: -135px;
+    padding-left: 88px;
+}
+.home-head h2{
+	margin-left: -2px;
+	font-weight: 700;
+}
+.home-head h6{
+	color: #bfc4ca !important;
+	text-transform: uppercase;
+    font-weight: 700;
+}
+.home-head h6 i {
+    font-size: 3px;
+    margin: 2px;
+}
+.home-head-quote p{
+	font-size: 14px;
+}
 
 /*HOME PAGE STYLES*/
