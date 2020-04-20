@@ -415,19 +415,16 @@ box-shadow: none;
     margin-top: -65px;
 }
 #myTabContent{
-	//position: relative;
-    //top: 155px;
-	//left: 0;
 	width: 100%;
-	padding:24px 16px;
+	padding:24px 0px;
 	border-radius: 50px;
-	background: #fff;
+	//background: #fff;
 	color: #2C3C50;
-	border:1px solid #2C3C50;
+	//border:1px solid #2C3C50;
 	padding-bottom: 200px;
 }
 .main-tab-content{
-	margin-top: -70px;
+	margin-top: -85px;
 }
 .home-head{
 	position: absolute;
@@ -460,9 +457,9 @@ box-shadow: none;
     border: 2px solid #2C3C50;
     width: 100%;
     border-radius: 40px;
-    top: -47px;
+    top: -25px;
     padding: 12px 55px 0px 14px;
-    right: -80px;
+    right: -50px;
     text-align: right;
 }
 .home-head-quote p{
@@ -487,8 +484,11 @@ box-shadow: none;
 	text-align: center;
 	font-size: 24px;
 }
+.mycard .card-img-cover{
+	padding: 10px 10px 0px 10px;
+}
 .mycard img.card-img-top{
-	padding: 5px;
+	padding: 0px;
 }
 .mycard#card-service img.card-img-top{
 	margin-top: -30px;
@@ -512,6 +512,8 @@ box-shadow: none;
     display: block;
     border-radius: 25px;
     width: 80%;
+    color: #fff;
+    background: #2C3C50;
 }
 
 #card-service .card-body{
