@@ -640,7 +640,91 @@ box-shadow: none;
 #skills .skills-item p {
     padding-top: 10px;
 }
-/*portfolio Tab Section css*/
+/*Skills Tab Section Ends*/
+
+
+/*Profile Tab Section Starts*/
+#profile{
+	background: #fff;
+    padding: 0px;
+    margin-top: -120px;
+    margin-bottom: -160px;
+    position: relative;
+    top: -145px;
+    border-radius: 25px;
+    width: 100%;
+}
+#profile .profile-cover{
+	height: 230px;
+    border-radius: 0px 0px 30px 30px;
+    padding: 10px;
+    width: 100%;
+    background-image: url(../images/Designer2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%,cover;
+}
+#profile .dp-cover{
+
+}
+#profile .dp-cover img{
+    display: block;
+	width: 100px;
+    margin: 0 auto;
+    margin-top: -50px;
+    border: 5px solid #2C3C50;
+    border-radius: 50px;
+}
+#profile .dp-cover {
+    text-align: center;
+}
+#profile .dp-cover h5 {
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+#profile .dp-cover h6 {
+	font-size: 14px;
+}
+#profile .social-cover {
+	display: flex;
+	flex-direction: row;
+}
+#profile .social-icon {
+   	width: 100%;
+    text-align: center;
+    margin: 12px;
+}
+#profile .social-icon i{
+	cursor: pointer;
+	color: #2C3C50;
+	font-size: 36px;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+#profile .about-cover h4{
+	font-size: 18px;
+    padding: 0 20px 0 0px;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+}
+#profile .about-cover h4 i{
+	width: 24px;
+}
+#profile .about-cover {
+    padding: 14px;
+    margin-bottom: 30px;
+}
+#profile .about-cover p.card-text {
+    font-size: 14px;
+}
+
+/*Profile Tab Section Ends*/
 
 
 /*HOME PAGE STYLES*/
