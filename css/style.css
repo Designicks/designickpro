@@ -53,7 +53,7 @@ nav .nav-item{
 li.nav-item .nav-link {
     background: #fff;
     margin: 4px 0;
-    text-align: left;
+    text-align: center;
     padding: 10px;
     border-radius: 10px;
     font-weight: 600;
@@ -486,6 +486,8 @@ box-shadow: none;
 .mycard .heading{
 	text-align: center;
 	font-size: 24px;
+	font-family: Montserrat;
+    font-weight: 600;
 }
 .mycard .card-img-cover{
 	padding: 10px 10px 0px 10px;
@@ -574,6 +576,11 @@ box-shadow: none;
 }
 .portfolio-cover .portfolio-head > .portfolio-item img{
 	box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+	transition: 0.3s all;
+}
+.portfolio-cover .portfolio-head > .portfolio-item img:hover{
+	transform: scale(1.1);
+    transition: 0.3s all;
 }
 .portfolio-cover .portfolio-head > .portfolio-item{
 	background: #fff;
@@ -588,6 +595,8 @@ box-shadow: none;
 .portfolio-cover .portfolio-head > .portfolio-item p{ 
 	margin-bottom: 0;
 	text-align: left;
+	color: #2C3C50;
+	margin-top: 5px;
 }
 .portfolio-cover .portfolio-head > .portfolio-item p i{
 	width: 20px;
@@ -598,9 +607,11 @@ box-shadow: none;
     border-radius: 30px;
     margin-left: -50px;
     padding-left: 55px;
-    font-size: 24px;
     margin-top: 10px;
     margin-bottom: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
 }
 /*portfolio Section css*/
 
@@ -621,10 +632,12 @@ box-shadow: none;
     border-radius: 30px;
     margin-left: -50px;
     padding-left: 55px;
-    font-size: 24px;
     color: #fff;
     margin-top: 10px;
     margin-bottom: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
 }
 #skills .skills-item{
 	margin: 0 auto;
@@ -784,6 +797,22 @@ box-shadow: none;
 	border-radius: 40px;
 }
 
-
+.display-msg{
+	position: absolute;
+	top: 50%;
+	margin: o auto;
+	text-align: center;
+	color: #fff;
+	padding: 30px;
+	display: none;
+}
+@media only screen and (min-width: 990px){  
+.mycontainer{
+		display: none;
+	}
+.display-msg{
+		display: block;
+	}
+}
 
 
