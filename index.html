@@ -2,7 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Designick PRo</title>
+		<title>Designick Pro - by Nikunj Gurjar | A Web Designer + UI/UX Developer Portfolio Live Status </title>
+		<meta name="author" content="Nikunj Gurjar Designick Pro">
+		<meta name="description" content="Nikunj Gurjar's Web App Portfolio Live Status">
+		<!-- Favicons -->
+		<link href="images/favicon.jpg" rel="icon">
 		<meta name="keywords" content="Designick Pro,design,Nicks Nikunj Gurjar,Nikunj Gurjar, 
 		 WEB DESIGNER,Frontend Developer,Web Portfolio, facebook,youtube,amazon,gmail,ebay, google translate,netflix,lockdown,covid,corona, news,coronavirus,fox news calculator,map paypal, instagram,target,msn,indeed,linkedin,naukri,jobs,new movies 2020, latest, series,black friday,icc world cup 2020,2020 kia optima s,Web Layout, latest,how to design a web site	,what is website,what is web designing,how to host a web site,responsive web design,Wordpress,hot,development,Nikunj,Gurjar,sexy,love,lust,girls,boys,trending, fashion, weather,how,why, how to,logo design ,service,want to,learn,business internet providers Los Angeles,walmart,maps,hotmail,What is Bitcoin?,What is My IP?,____ to avoid” and “is ____ worth it,google's revenue,कोरोना वायरस टिप्स,Coronavirus Tips,World book day, Best books to read, nobles,google , william Shakespeare Coronavirus treatment, Reliance Share, Jio Free Offer, Idea offers,Airtel offers,Vaccine for Covid-19,3 May, Indore updates, Coronavirus Prevention,classroom,dominos,group on,instagram,pinterest,free,What is my ip?,What time is it?,How to tie a tie?,SEO,SEO Tools, SEO Service,Small SEO Tools,Real Estate,web development,Business Cards,Network Marketing, Digital Marketing,Social Marketing,Affiliate Marketing, Designick, Developer, designicks,Photography Editing,Nail Arts,Wall Art,CSS,XML,JavaScript, easy dance, tutorials">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -101,6 +105,23 @@
 		function myFunction(x) {
 		x.classList.toggle("change");
 		}
+
+//disable content js
+		var client = {
+		     init: function() {
+		          var o=this;
+
+		          // this will disable dragging of all images
+		          $("img").mousedown(function(e){
+		               e.preventDefault()
+		          });
+
+		          // this will disable right-click on all images
+		          $("body").on("contextmenu",function(e){
+		               return false;
+		          });
+		    }
+		};
 		</script>
 	</body>
 </html>

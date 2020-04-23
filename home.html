@@ -2,7 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Designick PRo-HOME</title>
+		<title>Designick Pro - by Nikunj Gurjar | A Web Designer + UI/UX Developer Portfolio Live Status </title>
+		<meta name="author" content="Nikunj Gurjar Designick Pro">
+		<meta name="description" content="Nikunj Gurjar's Web App Portfolio Live Status">
+		<!-- Favicons -->
+		<link href="images/favicon.jpg" rel="icon">
 		<meta name="keywords" content="Designick Pro,design,Nicks Nikunj Gurjar,Nikunj Gurjar, 
 		 WEB DESIGNER,Frontend Developer,Web Portfolio, facebook,youtube,amazon,gmail,ebay, google translate,netflix,lockdown,covid,corona, news,coronavirus,fox news calculator,map paypal, instagram,target,msn,indeed,linkedin,naukri,jobs,new movies 2020, latest, series,black friday,icc world cup 2020,2020 kia optima s,Web Layout, latest,how to design a web site	,what is website,what is web designing,how to host a web site,responsive web design,Wordpress,hot,development,Nikunj,Gurjar,sexy,love,lust,girls,boys,trending, fashion, weather,how,why, how to,logo design ,service,want to,learn,business internet providers Los Angeles,walmart,maps,hotmail,What is Bitcoin?,What is My IP?,____ to avoid” and “is ____ worth it,google's revenue,कोरोना वायरस टिप्स,Coronavirus Tips,World book day, Best books to read, nobles,google , william Shakespeare Coronavirus treatment, Reliance Share, Jio Free Offer, Idea offers,Airtel offers,Vaccine for Covid-19,3 May, Indore updates, Coronavirus Prevention,classroom,dominos,group on,instagram,pinterest,free,What is my ip?,What time is it?,How to tie a tie?,SEO,SEO Tools, SEO Service,Small SEO Tools,Real Estate,web development,Business Cards,Network Marketing, Digital Marketing,Social Marketing,Affiliate Marketing, Designick, Developer, designicks,Photography Editing,Nail Arts,Wall Art,CSS,XML,JavaScript, easy dance, tutorials">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,19 +64,19 @@
 				<div class="bottom-tabs-content bottom-tabs">
 					<ul class="nav nav-tabs sticky fixed" id="myTab" role="tablist">
 						<li class="nav-item ">
-							<a class="nav-link active " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home"></i></a>
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home"></i></a>
 						</li>
-						<li class="nav-item ">
-							<a class="nav-link " id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false"><i class="fab fa-dashcube"></i></a>
+						<li class="nav-item">
+							<a class="nav-link"  id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false" onclick="goto();"><i class="fab fa-dashcube"></i></a>
 						</li>
 						<!-- <i class="far fa-clone"></i> -->
 						<!-- <i class="fas fa-briefcase"></i> -->
 						<li class="nav-item">
-							<a class="nav-link " id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false"><i class="fab fa-artstation"></i></a>
+							<a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false" onclick="goto();"><i class="fab fa-artstation"></i></a>
 						</li>
 						<!-- <i class="fas fa-sliders-h"></i> -->
-						<li class="nav-item ">
-							<a class="nav-link " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="far fa-user"></i></a>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" onclick="goto();"><i class="far fa-user"></i></a>
 						</li>
 						<!-- <i class="fas fa-user-tie"></i> -->
 					</ul>
@@ -772,8 +776,17 @@
 									<div class="social-icon">
 										<a href="https://wa.link/j9iz6b"><i class="fab fa-whatsapp"></i></a>
 									</div>
-									
 								</div>
+								<div class="social-cover">
+									<div class="social-icon">
+										<a href=""><i class="far fa-envelope-open"></i></a>
+									</div>
+									<div class="social-icon">
+										<a href=""><i class="fa fa-phone"></i></a>
+									</div>
+								</div>
+
+
 								<h4><i class="far fa-hand-point-right"></i>Personal Blogging Site</h4>
 								<p>Go to<a href="http://designersblog.online"> Designer's Blog</a></p>
 								
@@ -814,10 +827,32 @@
 			</div>
 		</section>
 		<script>
-		$(window).on('load', function () {
-		$("#coverScreen").hide();
-		});
+		// $(window).on('load', function () {
+		// $("#coverScreen").hide();
+		// });
+
+		window.onload = function ()
+		{
+		    setTimeout(function(){ 
+		      $("#coverScreen").hide();
+		    }, 6000);
+		};
+
 		AOS.init();
+
+		function goto(){
+		window.scrollTo(0, 0);
+		}
+
+		//disable content js
+
+		(function($){
+  $(document).on('contextmenu', 'img', function() {
+      return false;
+  })
+})(jQuery);
+$('img').on('dragstart', function(event) { event.preventDefault(); });
+
 		</script>
 	</body>
 </html>
