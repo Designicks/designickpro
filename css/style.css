@@ -732,7 +732,7 @@ font-size: 20px !important;
 /*HOME PAGE STYLES*/
 /* Loader css */
 .LockOn {
-display: block;
+/*display: block;
 visibility: visible;
 position: absolute;
 z-index: 99999;
@@ -752,7 +752,7 @@ background-image: url(../images/icons/blue.gif);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
-background-size: 100%;
+background-size: 100%;*/
 }
 /*Loader*/
 #myTab .nav-item .nav-link{
