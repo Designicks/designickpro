@@ -363,39 +363,39 @@ transition: all 0.1s;
 /*Tab animation css*/
 
 @-webkit-keyframes tab_color_change {
-	0% { color: #2F314A; }
-	25% { color: blue; }
-	50% { color: #ffd86e; }
-	75% { color: pink; }
-	100% { color: orange; }
+	0% { color: yellow; }
+	25% { color: #ffd86e; }
+	50% { color: #ff80d9; }
+	75% { color: green; }
+	100% { color: pink; }
 }
 @-moz-keyframes tab_color_change {
-	0% { color: #2F314A; }
-	25% { color: blue; }
-	50% { color: #ffd86e; }
-	75% { color: pink; }
-	100% { color: orange; }
+	0% { color: yellow; }
+	25% { color: #ffd86e; }
+	50% { color: #ff80d9; }
+	75% { color: green; }
+	100% { color: pink; }
 }
 @-ms-keyframes tab_color_change {
-	0% { color: #2F314A; }
-	25% { color: blue; }
-	50% { color: #ffd86e; }
-	75% { color: pink; }
-	100% { color: orange; }
+	0% { color: yellow; }
+	25% { color: #ffd86e; }
+	50% { color: #ff80d9; }
+	75% { color: green; }
+	100% { color: pink; }
 }
 @-o-keyframes tab_color_change {
-	0% { color: #2F314A; }
-	25% { color: blue; }
-	50% { color: #ffd86e; }
-	75% { color: pink; }
-	100% { color: orange; }
+	0% { color: yellow; }
+	25% { color: #ffd86e; }
+	50% { color: #ff80d9; }
+	75% { color: green; }
+	100% { color: pink; }
 }
 @keyframes tab_color_change {
-	0% { color: #2F314A; }
-	25% { color: blue; }
-	50% { color: #ffd86e; }
-	75% { color: pink; }
-	100% { color: orange; }
+	0% { color: yellow; }
+	25% { color: #ffd86e; }
+	50% { color: #ff80d9; }
+	75% { color: green; }
+	100% { color: pink; }
 }
 .bottom-tabs #myTab .nav-item .nav-link.active i{
 	animation-name: tab_color_change;
