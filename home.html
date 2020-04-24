@@ -54,7 +54,12 @@
 			<div class="container-fluid">
 				<div class="header-img-logo clearfix">
 					<div class="logo_cover">
-						<img src="images/designickPro.png" alt="DesignickPro Logo">
+						<!-- <img src="images/designickPro.png" alt="DesignickPro Logo"> -->
+						<label class="switch" >
+						  <input type="checkbox" onclick="myFunction()" checked>
+						  <span class="slider round"></span>
+						</label>
+						<span class="change-color-mode">Change Color Mode</span>
 					</div>
 				</div>
 			</div>
@@ -854,6 +859,13 @@
 })(jQuery);
 $('img').on('dragstart', function(event) { event.preventDefault(); });
 
+
+//script to change color mode
+function myFunction() {
+var element = document.body;
+element.classList.toggle("light-mode");
+}
+//script to change color mode
 		</script>
 	</body>
 </html>
