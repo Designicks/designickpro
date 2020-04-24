@@ -38,6 +38,13 @@
 		gtag('js', new Date());
 		gtag('config', 'G-ZB0290TQRJ');
 		</script>
+		<script>
+		window.onload = function ()
+		{setTimeout(function(){ 
+		  $("#coverScreen").hide();
+		 }, 5600);
+		};
+		</script>
 	</head>
 	<body>
 		<!-- LOADER -->
@@ -836,13 +843,6 @@
 		// $(window).on('load', function () {
 		// $("#coverScreen").hide();
 		// });
-
-		window.onload = function ()
-		{
-		    setTimeout(function(){ 
-		      $("#coverScreen").hide();
-		    }, 5600);
-		};
 
 		AOS.init();
 
