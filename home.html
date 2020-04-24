@@ -38,6 +38,33 @@
 		gtag('js', new Date());
 		gtag('config', 'G-ZB0290TQRJ');
 		</script>
+		<style>
+			/* Loader css */
+			.LockOn {
+			display: block;
+			visibility: visible;
+			position: absolute;
+			z-index: 99999;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 1000%;
+			background-color: #5B21BC;
+			vertical-align: bottom;
+			padding-top: 20%;
+			opacity: 1;
+			font-size: large;
+			color: blue;
+			font-style: italic;
+			font-weight: 400;
+			background-image: url(images/icons/blue.gif);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: 100%;
+			}
+			/*Loader*/
+		</style>
 	</head>
 	<body>
 		<!-- LOADER -->
@@ -839,7 +866,7 @@
 		window.onload = function ()
 		{setTimeout(function(){ 
 		  $("#coverScreen").hide();
-		 }, 4500);
+		 }, 300);
 		};
 
 		AOS.init();
