@@ -65,6 +65,13 @@
 			}
 			/*Loader*/
 		</style>
+		<script>
+		window.onload = function ()
+		{setTimeout(function(){ 
+		  $("#coverScreen").hide();
+		 }, 300);
+		};
+		</script>
 	</head>
 	<body>
 		<!-- LOADER -->
@@ -863,11 +870,7 @@
 		// $(window).on('load', function () {
 		// $("#coverScreen").hide();
 		// });
-		window.onload = function ()
-		{setTimeout(function(){ 
-		  $("#coverScreen").hide();
-		 }, 300);
-		};
+		
 
 		AOS.init();
 
