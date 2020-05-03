@@ -363,6 +363,14 @@ button {
   border: 1px solid #fdd;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
+/*// style to hide tabs when scroll*/
+  #myTab{
+transition: transform 250ms ease-in-out;
+  }  
+.hide {
+    transform: translateY(50px);
+  }
+  /*// style to hide tabs when scroll*/
 .bottom-tabs #myTab li.nav-item {
   padding: 0 14px;
   background: 0 0;
