@@ -350,7 +350,7 @@ button {
 .nav.nav-tabs#myTab {
   position: fixed;
   z-index: 9;
-  bottom: -2px;
+  bottom: -6px;
   left: -2px;
   display: flex;
   flex-direction: row;
@@ -365,7 +365,7 @@ button {
 }
 /*// style to hide tabs when scroll*/
   #myTab{
-transition: transform 250ms ease-in-out;
+transition: transform 200ms ease-in-out;
   }  
 .hide {
     transform: translateY(50px);
@@ -515,7 +515,7 @@ transition: transform 250ms ease-in-out;
   overflow: hidden;
   padding-top: 78px;
   margin-top: -65px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 #myTabContent {
   width: 100%;
